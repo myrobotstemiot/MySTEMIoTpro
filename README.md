@@ -1,2 +1,1 @@
-# MySTEMIoTpro
-MySTEMIoTpro board design for STEM, IoT education. Use for Secoudary education or Professional. Work with KBIDE software.
+MySTEM&IoT PRO บอร์ดเพื่อการเรียนรู้ด้านสะเต็มศึกษา การทำโครงงานเทคโนโลยี และ IoT ระดับมัธยมศึกษาและอุดมศึกษา.
