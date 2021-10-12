@@ -7,6 +7,6 @@ module.exports = {
     website : 'http://www.myrobotstem.com/',
     email : 'myrobotstem@gmail.com',
     git : 'https://github.com/myrobotstemiot/MySTEMIoTpro/',
-    image : '/static/display.jpg',
+    image : '/static/Display.jpg',
     version : '1.0.0',
 };
