@@ -78,7 +78,7 @@ Blockly.JavaScript['MySTEMIoTpro_servo2'] = function(block) {
   };
 
     Blockly.JavaScript["RGB5_MySTEMIoTpro"] = function(block) {
-	let dropdown_pin = block.getFieldValue("pin");
+//	let dropdown_pin = block.getFieldValue("pin");
     let dropdown_rrr_status = block.getFieldValue("rrr_status");
     let dropdown_ggg_status = block.getFieldValue("ggg_status");
 	let dropdown_bbb_status = block.getFieldValue("bbb_status");
