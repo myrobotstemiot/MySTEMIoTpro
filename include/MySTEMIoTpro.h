@@ -40,18 +40,18 @@ static const uint8_t KB_BUZZER = 14;
 #define A10 16
 #define A11 17
  // MCP23XXX pin Relay is attached to
-#define Relay_1 0    
-#define Relay_2 1
-#define RelayDC_3 2
-#define RelayDC_4 3
-#define RelayAC_5 4
-#define RelayAC_6 5
-#define RelayAC_7 6
-#define RelayAC_8 7
-#define USB_1 8
-#define USB_2 9
-#define USB_3 10
-#define USB_4 11
+#define Relay1_12VDC 0    
+#define Relay2_12VDC 1
+#define Relay3_12VDC 2
+#define Relay4_12VDC 3
+#define Relay5_220VAC 4
+#define Relay6_220VAC 5
+#define Relay7_220VAC 6
+#define Relay8_220VAC 7
+#define USB1_5VDC 8
+#define USB2_5VDC 9
+#define USB3_5VDC 10
+#define USB4_5VDC 11
 
  RTC_DS3231 rtc;
  char daysOfTheWeek[7][12] = {"Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"};
@@ -140,18 +140,18 @@ void MySTEMIoTpro(){
   pinMode(36,INPUT);
   pinMode(19,OUTPUT);
   //configure pin for mcp output
-  mcp.pinMode(Relay_1, OUTPUT);
-  mcp.pinMode(Relay_2, OUTPUT);
-  mcp.pinMode(RelayDC_3, OUTPUT);
-  mcp.pinMode(RelayDC_4, OUTPUT);
-  mcp.pinMode(RelayAC_5, OUTPUT);
-  mcp.pinMode(RelayAC_6, OUTPUT);
-  mcp.pinMode(RelayAC_7, OUTPUT);
-  mcp.pinMode(RelayAC_8, OUTPUT);
-  mcp.pinMode(USB_1, OUTPUT);
-  mcp.pinMode(USB_2, OUTPUT);
-  mcp.pinMode(USB_3, OUTPUT);
-  mcp.pinMode(USB_4, OUTPUT);
+  mcp.pinMode(Relay1_12VDC, OUTPUT);
+  mcp.pinMode(Relay2_12VDC, OUTPUT);
+  mcp.pinMode(Relay3_12VDC, OUTPUT);
+  mcp.pinMode(Relay4_12VDC, OUTPUT);
+  mcp.pinMode(Relay5_220VAC, OUTPUT);
+  mcp.pinMode(Relay6_220VAC, OUTPUT);
+  mcp.pinMode(Relay7_220VAC, OUTPUT);
+  mcp.pinMode(Relay8_220VAC, OUTPUT);
+  mcp.pinMode(USB1_5VDC, OUTPUT);
+  mcp.pinMode(USB2_5VDC, OUTPUT);
+  mcp.pinMode(USB3_5VDC, OUTPUT);
+  mcp.pinMode(USB4_5VDC, OUTPUT);
   // Read sensor for 0-1023 (2^10=1024)
   analogReadResolution(10); 
   // Logo display
