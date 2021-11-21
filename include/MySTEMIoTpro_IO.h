@@ -74,7 +74,7 @@ void output(int _pin,int _state){
   mcp.pinMode(_pin,OUTPUT);
   mcp.digitalWrite(_pin,_state);
 }
-*/
+
 void rgb(int _pin,int _r_state,int _g_state,int _b_state){
 	if(_pin == 26)_pin = 26;
 		  pinMode(26, OUTPUT);
@@ -91,7 +91,7 @@ void rgb(int _pin,int _r_state,int _g_state,int _b_state){
 		  digitalWrite(27,_r_state);
 		  digitalWrite(14,_g_state);
 		  digitalWrite(15,_b_state);
-	else if(_pin == 12)_pin = 12;
+	else (_pin == 12)_pin = 12;
  		  pinMode(12, OUTPUT);
 		  pinMode(16, OUTPUT);
 		  pinMode(17, OUTPUT);
@@ -99,3 +99,4 @@ void rgb(int _pin,int _r_state,int _g_state,int _b_state){
 		  digitalWrite(16,_g_state);
 		  digitalWrite(17,_b_state);
 }
+*/
