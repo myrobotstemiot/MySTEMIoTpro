@@ -91,7 +91,7 @@ module.exports = {
 
 		 {
 			 xml:
-				  `<block type="RGB6_MySTEMIoTpro">
+				  `<block type="RGB3_MySTEMIoTpro">
                         <value name="status">
                             <shadow type="math_number">
                                 <field name="NUM">1</field>
@@ -102,7 +102,18 @@ module.exports = {
 
 		 {
 			 xml:
-				  `<block type="RGB7_MySTEMIoTpro">
+				  `<block type="RGB4_MySTEMIoTpro">
+                        <value name="status">
+                            <shadow type="math_number">
+                                <field name="NUM">1</field>
+                            </shadow>
+                        </value>
+                    </block>`
+		 },
+
+		 {
+			 xml:
+				  `<block type="RGB5_MySTEMIoTpro">
                         <value name="status">
                             <shadow type="math_number">
                                 <field name="NUM">1</field>

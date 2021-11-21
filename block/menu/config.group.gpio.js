@@ -53,7 +53,7 @@ module.exports = {
                         </value>
                     </block>`
     },
-    "Knob_MySTEMIoTpro",
+   // "Knob_MySTEMIoTpro",
     "SW_MySTEMIoTpro",
     // {
     //   xml:

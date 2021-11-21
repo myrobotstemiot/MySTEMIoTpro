@@ -27,12 +27,12 @@ module.exports = function(Blockly) {
         code += `digitalWrite(19,${dropdown_status});`;
     return code;
   };
-
+/*
   Blockly.JavaScript['Knob_MySTEMIoTpro'] = function(block) {  
     var code = '(analogRead(39))';  
     return [code, Blockly.JavaScript.ORDER_ATOMIC];
   };
-
+*/
   Blockly.JavaScript["io_pin_dummy_input"] = function(block) {
     let dropdown_name = block.getFieldValue("IO_PIN");
     let code = `${dropdown_name}`;
