@@ -139,6 +139,12 @@ void MySTEMIoTpro(){
   pinMode(35,INPUT);
   pinMode(36,INPUT);
   pinMode(19,OUTPUT);
+  //
+  pinMode(14,OUTPUT);
+  pinMode(15,OUTPUT);
+  digitalWrite(14, 0);
+  digitalWrite(15, 0);
+  //
   //configure pin for mcp output
   mcp.pinMode(Relay1_12VDC, OUTPUT);
   mcp.pinMode(Relay2_12VDC, OUTPUT);
