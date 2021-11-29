@@ -163,12 +163,13 @@ void MySTEMIoTpro(){
   // Logo display
   gfx->setTextSize(2);
   gfx->setCursor(5, 20);
-  gfx->println(String("MySTEMIoTpro"));
+  gfx->println(String("MySTEM&IoT"));
+  gfx->setTextSize(3);
+  gfx->setCursor(40, 50);
+  gfx->println(String("PRO"));
+//  gfx->setCursor(40, 70);
+//  gfx->println(String("STEM"));
   gfx->setTextSize(2);
-  gfx->setCursor(20, 45);
-  gfx->println(String("Myrobot"));
-  gfx->setCursor(40, 70);
-  gfx->println(String("STEM"));
   gfx->setCursor(20, 100);
   gfx->println(String("V.1.0.0"));
   delay(500);
