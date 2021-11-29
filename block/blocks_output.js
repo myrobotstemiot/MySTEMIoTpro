@@ -111,10 +111,10 @@ Blockly.Blocks['MySTEMIoTpro_servo2'] = {
       this.appendDummyInput()
         .appendField("Output CH")
         .appendField(new Blockly.FieldDropdown([
-                                              ["Relay1_NC-COM-NO", "0"],
-                                              ["Relay2_NC-COM-NO", "1"],
-                                              ["Relay3_12VDC_NC-COM-NO", "2"],
-                                              ["Relay4_12VDC_NC-COM-NO", "3"],
+                                              ["Relay1_NC_COM_NO", "0"],
+                                              ["Relay2_NC_COM_NO", "1"],
+                                              ["Relay3_12VDC_NC_COM_NO", "2"],
+                                              ["Relay4_12VDC_NC_COM_NO", "3"],
                                               ["Relay5_220VAC", "4"],
                                               ["Relay6_220VAC", "5"],
                                               ["Relay7_220VAC", "6"],
