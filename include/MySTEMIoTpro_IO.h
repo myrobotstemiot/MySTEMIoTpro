@@ -11,10 +11,10 @@
 #define A10 16
 #define A11 17
 // MCP23XXX pin Relay is attached to
-#define Relay1_NC-COM-NO 0    
-#define Relay2_NC-COM-NO 1
-#define Relay3_12VDC_NC-COM-NO 2
-#define Relay4_12VDC_NC-COM-NO 3
+#define Relay1_NC_COM_NO 0    
+#define Relay2_NC_COM_NO 1
+#define Relay3_12VDC_NC_COM_NO 2
+#define Relay4_12VDC_NC_COM_NO 3
 #define Relay5_220VAC 4
 #define Relay6_220VAC 5
 #define Relay7_220VAC 6
