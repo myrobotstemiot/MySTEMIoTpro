@@ -59,18 +59,29 @@ module.exports = {
 		    {
 			 xml:
 				  `<block type="LED_MySTEMIoTpro">
+                        <value name="pin">
+                            <shadow type="math_number">
+                                <field name="NUM">1</field>
+                            </shadow>
+                        </value>
                         <value name="status">
                             <shadow type="math_number">
                                 <field name="NUM">1</field>
                             </shadow>
                         </value>
-                    </block>`
+
+					</block>`
 		 },
 
 		 {
 			 xml:
 				  `<block type="Buzzers_MySTEMIoTpro">
-                        <value name="status">
+                        <value name="pin">
+                            <shadow type="math_number">
+                                <field name="NUM">1</field>
+                            </shadow>
+                        </value>
+						<value name="status">
                             <shadow type="math_number">
                                 <field name="NUM">1</field>
                             </shadow>
@@ -81,7 +92,12 @@ module.exports = {
 		 {
 			 xml:
 				  `<block type="Laser_MySTEMIoTpro">
-                        <value name="status">
+                        <value name="pin">
+                            <shadow type="math_number">
+                                <field name="NUM">1</field>
+                            </shadow>
+                        </value>
+						<value name="status">
                             <shadow type="math_number">
                                 <field name="NUM">1</field>
                             </shadow>
@@ -91,30 +107,23 @@ module.exports = {
 
 		 {
 			 xml:
-				  `<block type="RGB3_MySTEMIoTpro">
-                        <value name="status">
+				  `<block type="RGB_MySTEMIoTpro">
+                         <value name="ch">
                             <shadow type="math_number">
                                 <field name="NUM">1</field>
                             </shadow>
                         </value>
-                    </block>`
-		 },
-
-		 {
-			 xml:
-				  `<block type="RGB4_MySTEMIoTpro">
-                        <value name="status">
+						<value name="r4_status">
                             <shadow type="math_number">
                                 <field name="NUM">1</field>
                             </shadow>
                         </value>
-                    </block>`
-		 },
-
-		 {
-			 xml:
-				  `<block type="RGB5_MySTEMIoTpro">
-                        <value name="status">
+                        <value name="g4_status">
+                            <shadow type="math_number">
+                                <field name="NUM">1</field>
+                            </shadow>
+                        </value>
+                        <value name="b4_status">
                             <shadow type="math_number">
                                 <field name="NUM">1</field>
                             </shadow>
@@ -125,16 +134,21 @@ module.exports = {
 		 {
 			 xml:
 				  `<block type="Output_MySTEMIoTpro">
-                        <value name="status">
+                         <value name="ch">
+                            <shadow type="math_number">
+                                <field name="NUM">1</field>
+                            </shadow>
+                        </value>
+						<value name="status">
                             <shadow type="math_number">
                                 <field name="NUM">1</field>
                             </shadow>
                         </value>
                     </block>`
 		 },
-
       ]
   },
+
 	{
       override : true,
       name: "MyTime",
