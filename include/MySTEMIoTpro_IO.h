@@ -69,34 +69,33 @@ void laser(int _pin,int _state){
   pinMode(_pin,OUTPUT);
   digitalWrite(_pin,_state);
 }
-/*
-void output(int _pin,int _state){
-  mcp.pinMode(_pin,OUTPUT);
-  mcp.digitalWrite(_pin,_state);
-}
 
-void rgb(int _pin,int _r_state,int _g_state,int _b_state){
-	if(_pin == 26)_pin = 26;
+void rgb(int _ch,int _r4_state,int _g4_state,int _b4_state){
+	if (_ch == 3)
+	{
 		  pinMode(26, OUTPUT);
 		  pinMode(13, OUTPUT);
 		  pinMode(2, OUTPUT);
-		  digitalWrite(26,_r_state);
-		  digitalWrite(13,_g_state);
-		  digitalWrite(2,_b_state);
-
-	else if(_pin == 27)_pin = 27;
+		  digitalWrite(26,_g4_state);
+		  digitalWrite(13,_b4_state);
+		  digitalWrite(2,_r4_state);
+	}
+	if (_ch == 4)
+	{
 		  pinMode(27, OUTPUT);
 		  pinMode(14, OUTPUT);
 		  pinMode(15, OUTPUT);
-		  digitalWrite(27,_r_state);
-		  digitalWrite(14,_g_state);
-		  digitalWrite(15,_b_state);
-	else (_pin == 12)_pin = 12;
+		  digitalWrite(27,_g4_state);
+		  digitalWrite(14,_b4_state);
+		  digitalWrite(15,_r4_state);
+	}
+	if (_ch == 5)
+	{
  		  pinMode(12, OUTPUT);
 		  pinMode(16, OUTPUT);
 		  pinMode(17, OUTPUT);
-		  digitalWrite(12,_r_state);
-		  digitalWrite(16,_g_state);
-		  digitalWrite(17,_b_state);
+		  digitalWrite(12,_g4_state);
+		  digitalWrite(16,_b4_state);
+		  digitalWrite(17,_r4_state);
+	}
 }
-*/
