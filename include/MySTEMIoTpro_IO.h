@@ -99,3 +99,16 @@ void rgb(int _ch,int _r4_state,int _g4_state,int _b4_state){
 		  digitalWrite(17,_r4_state);
 	}
 }
+
+int magnetic(int _pin){
+  pinMode(_pin,INPUT);
+  return digitalRead(_pin);
+}
+int button(int _pin){
+  pinMode(_pin,INPUT);
+  return digitalRead(_pin);
+}
+int reed(int _pin){
+  pinMode(_pin,INPUT);
+  return digitalRead(_pin);
+}
