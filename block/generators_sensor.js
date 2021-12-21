@@ -36,12 +36,39 @@ module.exports = function(Blockly){
 	  var code = `analog(${value_pin})`;
 	  return [code, Blockly.JavaScript.ORDER_ATOMIC];
 	};
+	/*
 	Blockly.JavaScript['Switch sensor'] = function(block) {
 	  var value_pin = block.getFieldValue('pin');  
 	  var code = `in(${value_pin})`;
 	  return [code, Blockly.JavaScript.ORDER_ATOMIC];
 	};
+	*/
+	Blockly.JavaScript['Push sensor'] = function(block) {
+	  var value_pin = block.getFieldValue('pin');  
+	  var code = `in(${value_pin})`;
+	  return [code, Blockly.JavaScript.ORDER_ATOMIC];
+	};
+	Blockly.JavaScript['Reed sensor'] = function(block) {
+	  var value_pin = block.getFieldValue('pin');  
+	  var code = `in(${value_pin})`;
+	  return [code, Blockly.JavaScript.ORDER_ATOMIC];
+	};
+	Blockly.JavaScript['Hall Magnetic sensor'] = function(block) {
+	  var value_pin = block.getFieldValue('pin');  
+	  var code = `in(${value_pin})`;
+	  return [code, Blockly.JavaScript.ORDER_ATOMIC];
+	};
 	Blockly.JavaScript['LDR sensor'] = function(block) {
+	  var value_pin = block.getFieldValue('pin');  
+	  var code = `analog(${value_pin})`;
+	  return [code, Blockly.JavaScript.ORDER_ATOMIC];
+	};
+	Blockly.JavaScript['PIR Motion sensor'] = function(block) {
+	  var value_pin = block.getFieldValue('pin');  
+	  var code = `analog(${value_pin})`;
+	  return [code, Blockly.JavaScript.ORDER_ATOMIC];
+	};
+	Blockly.JavaScript['MQ Gas sensor'] = function(block) {
 	  var value_pin = block.getFieldValue('pin');  
 	  var code = `analog(${value_pin})`;
 	  return [code, Blockly.JavaScript.ORDER_ATOMIC];
@@ -56,12 +83,14 @@ module.exports = function(Blockly){
 	  var code = `analog(${value_pin})`;
 	  return [code, Blockly.JavaScript.ORDER_ATOMIC];
 	};
+/*
 	Blockly.JavaScript['Ultrasonic sensor'] = function(block) {
 	  var value_Trig = block.getFieldValue('Trig'); 
 	  var value_Echo = block.getFieldValue('Echo');   
 	  var code = `ultrasonic(${value_Echo},${value_Trig})`;
 	  return [code, Blockly.JavaScript.ORDER_ATOMIC];
 	};
+*/
 	Blockly.JavaScript['dhtesp_setup_MySTEMIoTpro'] = function(block) {
 	  var variable_instance = Blockly.JavaScript.variableDB_.getName(block.getFieldValue('instance'), Blockly.Variables.NAME_TYPE);
 	  var dropdown_dht_type = block.getFieldValue('dht_type');

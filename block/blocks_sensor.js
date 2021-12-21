@@ -121,6 +121,7 @@ Blockly.Blocks["Light sensor"] = {
    this.setHelpUrl("");
     }
   };
+/*
 Blockly.Blocks["Switch sensor"] = {
     init: function() {
       this.appendDummyInput()
@@ -142,10 +143,70 @@ Blockly.Blocks["Switch sensor"] = {
    this.setHelpUrl("");
     }
   };
+  */
+Blockly.Blocks["Push sensor"] = {
+    init: function() {
+      this.appendDummyInput()
+          .appendField("PUSH Switch")
+          .appendField(new Blockly.FieldDropdown([
+                                              ["A (34)", "34"],
+                                              ["B (35)", "35"],
+                                              ["OK (36)", "36"],
+                                              ["A0 (32)", "32"],
+                                              ["A1 (33)", "33"],
+                                              ["A2 (25)", "25"],
+                                              ["A3 (26)", "26"],
+                                              ["A4 (27)", "27"],
+                                              ["A5 (12)", "12"]]), "pin");
+      this.setInputsInline(true);
+      this.setOutput(true, "Number");
+      this.setColour(200);
+   this.setTooltip("read analog value from pin");
+   this.setHelpUrl("");
+    }
+  };
+Blockly.Blocks["Reed sensor"] = {
+    init: function() {
+      this.appendDummyInput()
+          .appendField("REED Switch")
+          .appendField(new Blockly.FieldDropdown([
+                                              ["A0 (32)", "32"],
+                                              ["A1 (33)", "33"],
+                                              ["A2 (25)", "25"],
+                                              ["A3 (26)", "26"],
+                                              ["A4 (27)", "27"],
+                                              ["A5 (12)", "12"]]), "pin");
+      this.setInputsInline(true);
+      this.setOutput(true, "Number");
+      this.setColour(200);
+   this.setTooltip("read analog value from pin");
+   this.setHelpUrl("");
+    }
+  };
+
+Blockly.Blocks["Hall Magnetic sensor"] = {
+    init: function() {
+      this.appendDummyInput()
+          .appendField("Hall Magnetic sensor")
+          .appendField(new Blockly.FieldDropdown([
+                                              ["A0 (32)", "32"],
+                                              ["A1 (33)", "33"],
+                                              ["A2 (25)", "25"],
+                                              ["A3 (26)", "26"],
+                                              ["A4 (27)", "27"],
+                                              ["A5 (12)", "12"]]), "pin");
+      this.setInputsInline(true);
+      this.setOutput(true, "Number");
+      this.setColour(200);
+   this.setTooltip("read analog value from pin");
+   this.setHelpUrl("");
+    }
+  };
+
 Blockly.Blocks["LDR sensor"] = {
     init: function() {
       this.appendDummyInput()
-          .appendField("LDR")
+          .appendField("LDR sensor")
           .appendField(new Blockly.FieldDropdown([
                                               ["A0 (32)", "0"],
                                               ["A1 (33)", "1"],
@@ -160,6 +221,44 @@ Blockly.Blocks["LDR sensor"] = {
    this.setHelpUrl("");
     }
   };
+
+Blockly.Blocks["PIR Motion sensor"] = {
+    init: function() {
+      this.appendDummyInput()
+          .appendField("PIR Motion sensor")
+          .appendField(new Blockly.FieldDropdown([
+                                              ["A0 (32)", "0"],
+                                              ["A1 (33)", "1"],
+                                              ["A2 (25)", "2"],
+                                              ["A3 (26)", "3"],
+                                              ["A4 (27)", "4"],
+                                              ["A5 (12)", "5"]]), "pin");
+      this.setInputsInline(true);
+      this.setOutput(true, "Number");
+      this.setColour(200);
+   this.setTooltip("read analog value from pin");
+   this.setHelpUrl("");
+    }
+  };
+Blockly.Blocks["MQ Gas sensor"] = {
+    init: function() {
+      this.appendDummyInput()
+          .appendField("MQ Gas sensor")
+          .appendField(new Blockly.FieldDropdown([
+                                              ["A0 (32)", "0"],
+                                              ["A1 (33)", "1"],
+                                              ["A2 (25)", "2"],
+                                              ["A3 (26)", "3"],
+                                              ["A4 (27)", "4"],
+                                              ["A5 (12)", "5"]]), "pin");
+      this.setInputsInline(true);
+      this.setOutput(true, "Number");
+      this.setColour(200);
+   this.setTooltip("read analog value from pin");
+   this.setHelpUrl("");
+    }
+  };
+
 Blockly.Blocks["Distance sensor"] = {
     init: function() {
       this.appendDummyInput()
@@ -199,7 +298,7 @@ Blockly.Blocks["DS18B20 sensor"] = {
 Blockly.Blocks["Soil moisture sensor"] = {
     init: function() {
       this.appendDummyInput()
-          .appendField("Soil moisture")
+          .appendField("Soil Moisture sensor")
           .appendField(new Blockly.FieldDropdown([
                                               ["A0 (32)", "0"],
                                               ["A1 (33)", "1"],
@@ -214,6 +313,7 @@ Blockly.Blocks["Soil moisture sensor"] = {
    this.setHelpUrl("");
     }
   };
+/*
 Blockly.Blocks["Ultrasonic sensor"] = {
     init: function() {
       this.appendDummyInput()
@@ -241,6 +341,7 @@ Blockly.Blocks["Ultrasonic sensor"] = {
    this.setHelpUrl("");
     }
   };
+*/
 Blockly.Blocks["IR remote sensor"] = {
     init: function() {
       this.appendDummyInput()
@@ -314,7 +415,7 @@ Blockly.Blocks['ds18b20_init_MySTEMIoTpro'] = {
         .appendField("DS18B20 Init pin")
         .appendField(new Blockly.FieldNumber(0, 0, 255), "pin");*/
     this.appendDummyInput()
-          .appendField("DS18B20 Init pin")
+          .appendField("DS18B20 setup pin")
           .appendField(new Blockly.FieldDropdown([
                                               ["A0 (32)", "32"],
                                               ["A1 (33)", "33"],	

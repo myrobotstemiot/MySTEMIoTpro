@@ -83,7 +83,7 @@ Blockly.Blocks['MySTEMIoTpro_servo2'] = {
       this.setTooltip("");
     }
   };
-
+/*
  Blockly.Blocks['Laser_MySTEMIoTpro'] = {
     init: function() {
       this.appendDummyInput()
@@ -105,7 +105,8 @@ Blockly.Blocks['MySTEMIoTpro_servo2'] = {
       this.setTooltip("");
     }
   };
-
+*/
+/*
   Blockly.Blocks['Output_MySTEMIoTpro'] = {
     init: function() {
       this.appendDummyInput()
@@ -119,6 +120,49 @@ Blockly.Blocks['MySTEMIoTpro_servo2'] = {
                                               ["Relay6_220VAC", "5"],
                                               ["Relay7_220VAC", "6"],
                                               ["Relay8_220VAC", "7"],
+                                              ["USB1_5VDC", "8"],
+                                              ["USB2_5VDC", "9"],
+                                              ["USB3_5VDC", "10"],
+                                              ["USB4_5VDC", "11"]]), "ch");
+       this.appendDummyInput()
+        .appendField("status")
+        .appendField(new Blockly.FieldDropdown([["OFF","0"], ["ON","1"]]), "status");
+      this.setInputsInline(true);
+      this.setPreviousStatement(true, null);
+      this.setNextStatement(true, null);
+      this.setColour(270);
+      this.setTooltip("");
+    }
+  };
+*/
+  Blockly.Blocks['Relay_MySTEMIoTpro'] = {
+    init: function() {
+      this.appendDummyInput()
+        .appendField("Relay CH")
+        .appendField(new Blockly.FieldDropdown([
+                                              ["Relay1_NC_COM_NO", "0"],
+                                              ["Relay2_NC_COM_NO", "1"],
+                                              ["Relay3_12VDC_NC_COM_NO", "2"],
+                                              ["Relay4_12VDC_NC_COM_NO", "3"],
+                                              ["Relay5_220VAC", "4"],
+                                              ["Relay6_220VAC", "5"],
+                                              ["Relay7_220VAC", "6"],
+                                              ["Relay8_220VAC", "7"]]), "ch");
+       this.appendDummyInput()
+        .appendField("status")
+        .appendField(new Blockly.FieldDropdown([["OFF","0"], ["ON","1"]]), "status");
+      this.setInputsInline(true);
+      this.setPreviousStatement(true, null);
+      this.setNextStatement(true, null);
+      this.setColour(270);
+      this.setTooltip("");
+    }
+  };
+  Blockly.Blocks['USB_MySTEMIoTpro'] = {
+    init: function() {
+      this.appendDummyInput()
+        .appendField("USB CH")
+        .appendField(new Blockly.FieldDropdown([
                                               ["USB1_5VDC", "8"],
                                               ["USB2_5VDC", "9"],
                                               ["USB3_5VDC", "10"],

@@ -22,25 +22,39 @@ Blockly.JavaScript['MySTEMIoTpro_servo2'] = function(block) {
   Blockly.JavaScript["LED_MySTEMIoTpro"] = function(block) {
     let dropdown_pin = block.getFieldValue("pin");
     let dropdown_status =  block.getFieldValue("status");
-    let code =  `led(${dropdown_pin},${dropdown_status});`;
+    let code =  `out(${dropdown_pin},${dropdown_status});`;
 	return code;
   };
 
   Blockly.JavaScript["Buzzers_MySTEMIoTpro"] = function(block) {
     let dropdown_pin = block.getFieldValue("pin");
     let dropdown_status =  block.getFieldValue("status");
-    let code =  `buzzer(${dropdown_pin},${dropdown_status});`;
+    let code =  `out(${dropdown_pin},${dropdown_status});`;
 	return code;
   };
-
+/*
   Blockly.JavaScript["Laser_MySTEMIoTpro"] = function(block) {
     let dropdown_pin = block.getFieldValue("pin");
     let dropdown_status =  block.getFieldValue("status");
-    let code = `laser(${dropdown_pin},${dropdown_status});`;
+    let code = `out(${dropdown_pin},${dropdown_status});`;
     return code;
   };
-
+*/
+/*
   Blockly.JavaScript["Output_MySTEMIoTpro"] = function(block) {
+    let dropdown_pin = block.getFieldValue("ch");
+    let dropdown_status = block.getFieldValue("status");
+   let code = `mcp.digitalWrite(${dropdown_pin}, ${dropdown_status});`;
+	return code;
+  };
+*/
+  Blockly.JavaScript["Relay_MySTEMIoTpro"] = function(block) {
+    let dropdown_pin = block.getFieldValue("ch");
+    let dropdown_status = block.getFieldValue("status");
+   let code = `mcp.digitalWrite(${dropdown_pin}, ${dropdown_status});`;
+	return code;
+  };
+  Blockly.JavaScript["USB_MySTEMIoTpro"] = function(block) {
     let dropdown_pin = block.getFieldValue("ch");
     let dropdown_status = block.getFieldValue("status");
    let code = `mcp.digitalWrite(${dropdown_pin}, ${dropdown_status});`;

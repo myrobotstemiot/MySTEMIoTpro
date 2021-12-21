@@ -88,7 +88,7 @@ module.exports = {
                         </value>
                     </block>`
 		 },
-
+/*
 		 {
 			 xml:
 				  `<block type="Laser_MySTEMIoTpro">
@@ -104,7 +104,7 @@ module.exports = {
                         </value>
                     </block>`
 		 },
-
+*/
 		 {
 			 xml:
 				  `<block type="RGB_MySTEMIoTpro">
@@ -130,7 +130,7 @@ module.exports = {
                         </value>
                     </block>`
 		 },
-
+/*
 		 {
 			 xml:
 				  `<block type="Output_MySTEMIoTpro">
@@ -146,10 +146,44 @@ module.exports = {
                         </value>
                     </block>`
 		 },
-      ]
-  },
+*/
+		 {
+			 xml:
+				  `<block type="Relay_MySTEMIoTpro">
+                         <value name="ch">
+                            <shadow type="math_number">
+                                <field name="NUM">1</field>
+                            </shadow>
+                        </value>
+						<value name="status">
+                            <shadow type="math_number">
+                                <field name="NUM">1</field>
+                            </shadow>
+                        </value>
+                    </block>`
+		 },
+		 {
+			 xml:
+				  `<block type="USB_MySTEMIoTpro">
+                         <value name="ch">
+                            <shadow type="math_number">
+                                <field name="NUM">1</field>
+                            </shadow>
+                        </value>
+						<value name="status">
+                            <shadow type="math_number">
+                                <field name="NUM">1</field>
+                            </shadow>
+                        </value>
+                    </block>`
+		 },
 
-	{
+      ]
+   },
+// ]
+//  },
+
+ {
       override : true,
       name: "MyTime",
       index: 5,
@@ -210,7 +244,7 @@ module.exports = {
 
     {
       override : true,
-      name: " MySensor",
+      name: "MyInput",
       index: 3,
       color: "230",
       icon: "/static/icons/icons8_thermometer_96px.png",
@@ -219,16 +253,20 @@ module.exports = {
           xml: `<sep gap="32"></sep><label text="MySTEMIoTpro Sensor" web-class="headline"></label>`
         },
 
-          'Light sensor',
-          'TCS_read_rgb',
-          'Switch sensor',
-          'LDR sensor',
           'Distance sensor',
+          'Hall Magnetic sensor',
+		  'LDR sensor',
+          'Light sensor',
+		  'MQ Gas sensor',
+		  'PIR Motion sensor',
+		  'Push sensor',
+          'Reed sensor',
           'Soil moisture sensor',
+          'TCS_read_rgb',
+//          'Ultrasonic sensor',
           'dhtesp_setup_MySTEMIoTpro',
           'dhtesp_read_temp_MySTEMIoTpro',
           'dhtesp_read_humid_MySTEMIoTpro',
-          'Ultrasonic sensor',
           'ds18b20_init_MySTEMIoTpro',
           {
                 xml:
@@ -241,7 +279,7 @@ module.exports = {
                     </block>`
           },
           'IRremote_sensor',
-	      {
+		  {
                 xml:
                    `<block type="ds3231_rtc_get_temp">
                         <value name="device">
